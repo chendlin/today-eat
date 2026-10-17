@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#f8f6f1">
+<title>今天吃什么 · 北师珠</title>
+<style>
+:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#272724;background:#f8f6f1;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.wrap{max-width:920px;margin:auto;padding:30px 18px 80px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:30px}.eyebrow{font-size:12px;letter-spacing:2px;color:#807a6f;font-weight:700}.brand{font-size:28px;letter-spacing:-1px;font-weight:800;margin:5px 0}.sub{color:#8a877f;font-size:13px}.pill{padding:8px 12px;border:1px solid #e6e0d7;border-radius:40px;font-size:12px;color:#736c62}.tabs{display:flex;gap:7px;background:#eae6df;padding:5px;border-radius:15px;margin-bottom:20px}.tab{border:0;background:transparent;border-radius:11px;flex:1;padding:12px;color:#76736e;font-weight:700}.tab.active{background:#fff;color:#292723;box-shadow:0 2px 8px #4a3a2312}.view{display:none}.view.active{display:block}.card{background:white;border:1px solid #eee9e2;border-radius:22px;padding:24px;box-shadow:0 7px 20px #48371908;margin-bottom:17px}.hero{text-align:center;padding:32px 22px 25px;background:linear-gradient(150deg,#fff 55%,#f6f0e6)}.icon{font-size:30px}.hint{color:#948d82;font-size:13px}.result{font-size:clamp(28px,6vw,44px);font-weight:850;letter-spacing:-1.5px;margin:19px 0 8px;min-height:54px;display:flex;align-items:center;justify-content:center}.location{color:#817b71;margin-bottom:25px;font-size:14px;min-height:20px}.badge{display:inline-block;font-size:12px;border-radius:99px;background:#ede9df;padding:6px 11px;color:#6b6358}.seg{display:flex;gap:8px;justify-content:center;margin:20px auto}.seg button{border:1px solid #e6e0d7;background:white;border-radius:99px;padding:9px 23px;color:#736d63}.seg button.active{background:#2e3b30;color:white;border-color:#2e3b30}.primary{background:#2e3b30;color:white;border:0;border-radius:13px;padding:15px 24px;font-weight:750;width:100%;font-size:16px}.primary:hover{background:#435345}.outline{background:white;border:1px solid #dcd7ce;border-radius:12px;padding:12px 15px;font-weight:600;color:#3a3b34}.outline:hover{background:#f8f6f1}.btnrow{display:flex;gap:10px;margin-top:10px}.btnrow>*{flex:1}h2{font-size:18px;margin:0 0 17px}h3{font-size:14px;margin:0 0 10px}.field{display:flex;flex-direction:column;gap:7px;font-size:13px;color:#69675f}.field input,.field select{border:1px solid #e2ddd5;border-radius:11px;background:#fff;padding:12px;outline-color:#708571;min-width:0;width:100%;color:#2c2a26}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{background:#f8f6f1;padding:15px;border-radius:15px}.metric b{display:block;font-size:23px;margin-top:9px}.metric span{font-size:12px;color:#918a7f}.listitem{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid #f1ede7}.listitem:last-child{border:0}.muted{font-size:12px;color:#948d82;margin-top:5px}.name{font-size:14px;font-weight:650}.right{display:flex;align-items:center;gap:12px}.delete{border:0;background:#faf0ee;color:#a55e4f;border-radius:9px;padding:7px 10px}.small{font-size:12px;color:#918a7f}.restaurant{padding:10px 12px;border-radius:11px;background:#f8f6f1;margin:6px 0;font-size:13px}.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.total{font-size:24px;font-weight:800}.progress{height:10px;background:#ebe7df;border-radius:99px;overflow:hidden;margin:12px 0}.progress div{height:100%;background:#718b72;border-radius:99px;transition:width .2s}.chartbar{display:flex;align-items:center;gap:10px;margin:13px 0;font-size:12px}.chartbar .label{width:125px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.track{height:9px;background:#eeeae2;border-radius:99px;flex:1}.fill{background:#7d957b;height:100%;border-radius:99px}.foot{text-align:center;font-size:12px;color:#a19b91;padding-top:12px}#toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#2e3b30;color:white;padding:11px 18px;border-radius:12px;opacity:0;pointer-events:none;transition:.2s;z-index:9;white-space:nowrap}#toast.show{opacity:1}@media(min-width:720px){.twocol{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}.twocol .card{margin-bottom:0}}@media(max-width:550px){.wrap{padding:21px 14px 65px}.brand{font-size:24px}.pill{display:none}.card{padding:19px;border-radius:19px}.summary{gap:6px}.metric{padding:12px 9px}.metric b{font-size:19px}.grid2{gap:8px}.chartbar .label{width:98px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="top"><div><div class="eyebrow">BNU ZHUHAI · FOOD PICKER</div><div class="brand">今天吃什么？ 🍚</div><div class="sub">不用纠结下一顿，把选择交给随机。</div></div><div class="pill">北京师范大学珠海校区</div></header>
+<nav class="tabs"><button class="tab active" data-tab="choose">🎲 随机选餐</button><button class="tab" data-tab="records">📒 消费记录</button><button class="tab" data-tab="stats">📊 消费统计</button></nav>
+<section class="view active" id="choose"><div class="twocol"><div class="card hero"><div class="icon">🥢</div><div class="seg"><button class="active" data-meal="午餐">☀️ 午餐</button><button data-meal="晚餐">🌙 晚餐</button></div><div class="hint" id="resultHint">这顿饭，就交给运气吧</div><div class="result" id="resultName">吃点什么好呢？</div><div class="location" id="resultWhere">学三食堂 · 湖畔餐厅</div><button class="primary" id="draw">🎲 帮我决定！</button><div class="btnrow"><button class="outline" id="redraw" disabled>↻ 再抽一次</button><button class="outline" id="saveFromPick" disabled>✓ 记录这顿饭</button></div><div class="muted" style="margin-top:17px">首次点击「帮我决定」；不满意可点「再抽一次」。默认档口等概率，尽量避开今天吃过的和最近三餐。</div></div>
+<div><div class="card"><h2>今日选择</h2><div id="todayChoices" class="small">今天还没有记录用餐。</div></div></div></div></section>
+<section class="view" id="records"><div class="card"><h2>记录一顿饭</h2><p class="small" style="margin:-7px 0 17px;line-height:1.7">无论在校内、校外、点外卖还是自己做饭，都可以直接记录，不必先随机抽取。</p><div class="grid2"><label class="field">日期<input type="date" id="date"></label><label class="field">餐次<select id="meal"><option>午餐</option><option>晚餐</option></select></label><label class="field">用餐地点<select id="restaurant"></select></label><label class="field">实际花费（元）<input type="number" min="0.01" step="0.01" placeholder="例如 13.50" id="amount"></label></div><label class="field" id="customLocationField" style="display:none;margin-top:12px">餐厅 / 食物名称<input id="customLocation" type="text" maxlength="80" placeholder="例如：校外牛肉面、外卖轻食、自制晚餐"></label><button class="primary" style="margin-top:17px" id="save">保存这顿饭</button></div><div class="card"><div class="row"><h2 style="margin:0">用餐记录</h2><span id="recordCount" class="small"></span></div><div id="recordList" style="margin-top:10px"></div></div></section>
+<section class="view" id="stats"><div class="card"><h2>消费概览</h2><div class="summary"><div class="metric"><span>今日午晚餐</span><b id="dayTotal">¥0</b></div><div class="metric"><span>本月累计</span><b id="monthTotal">¥0</b></div><div class="metric"><span>平均每餐</span><b id="avgTotal">¥0</b></div></div></div><div class="card"><h2>月度预算</h2><label class="field">每月午晚餐预算（元）<input type="number" min="0" step="1" id="monthlyBudget" placeholder="例如 900"></label><div class="progress"><div id="budgetFill" style="width:0"></div></div><div class="row"><span class="small" id="budgetText">可设置月度预算</span><span class="small" id="budgetPct"></span></div></div><div class="card"><h2>用餐地点统计</h2><div id="chart"></div></div><div class="card"><h2>数据管理</h2><div class="btnrow"><button class="outline" id="export">↓ 导出消费 CSV</button><button class="outline" id="clear" style="color:#ad5143">清除记录</button></div><p class="small">数据只保存在本设备当前浏览器中。更换设备或清理浏览器数据可能导致记录丢失，请定期导出备份。</p></div></section>
+<footer class="foot">为北师珠的每一次用餐，省下一点纠结。 · 本地存储，无需注册</footer></main><div id="toast" role="status" aria-live="polite"></div>
+<script>
+'use strict';
+const eateries=[
+ {name:'麻辣烫',place:'学三食堂',floor:'一楼'},
+ {name:'智慧自选',place:'学三食堂',floor:'一楼'},
+ {name:'东北人家',place:'学三食堂',floor:'一楼'},
+ {name:'兰州拉面对面自选',place:'学三食堂',floor:'一楼'},
+ {name:'东北人家隔壁自选',place:'学三食堂',floor:'一楼'},
+ {name:'F+牛肉饭',place:'学三食堂',floor:'二楼'},
+ {name:'小周自选',place:'学三食堂',floor:'二楼'},
+ {name:'自选',place:'湖畔餐厅',floor:''},
+ {name:'卤',place:'湖畔餐厅',floor:''},
+ {name:'健康餐',place:'湖畔餐厅',floor:''}
+];
+const key='bnu-zhuhai-food-records-v1';const settingKey='bnu-zhuhai-food-settings-v1';
+function load(k,fallback){try{const raw=JSON.parse(localStorage.getItem(k));return raw??fallback}catch{return fallback}}
+let records=load(key,[]);if(!Array.isArray(records))records=[];
+let settings=load(settingKey,{monthlyBudget:''});
+let meal='午餐',picked=null,previousPick=null;
+const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];
+const money=n=>'¥'+Number(n||0).toFixed(2).replace(/\.00$/,'');
+const localDate=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
+const saveData=()=>localStorage.setItem(key,JSON.stringify(records));
+const toast=t=>{const el=$('#toast');el.textContent=t;el.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.classList.remove('show'),2500)};
+function tab(which){$$('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===which));$$('.view').forEach(v=>v.classList.toggle('active',v.id===which));render()}
+$$('.tab').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
+$$('[data-meal]').forEach(b=>b.onclick=()=>{meal=b.dataset.meal;$$('[data-meal]').forEach(x=>x.classList.toggle('active',x===b));picked=null;showPick()});
+
+function draw(isReroll=false){
+  if(!isReroll && picked!==null)return;
+  let candidates=eateries.map((_,index)=>index);
+  const today=localDate();let excluded=new Set(records.filter(r=>r.date===today && Number.isInteger(r.index)).map(r=>r.index));
+  records.slice(0,3).forEach(r=>{if(Number.isInteger(r.index))excluded.add(r.index)});
+  if(isReroll && picked!==null)excluded.add(picked);
+  let pool=candidates.filter(i=>!excluded.has(i));
+  if(!pool.length)pool=candidates.filter(i=>i!==picked);
+  if(!pool.length)pool=candidates;
+  picked=pool[Math.floor(Math.random()*pool.length)];showPick();
+}
+function showPick(){const p=picked===null?null:eateries[picked];$('#resultHint').textContent=p?'随机结果已出炉 ✨':'这顿饭，就交给运气吧';$('#resultName').textContent=p?p.name:'吃点什么好呢？';$('#resultWhere').textContent=p?`${p.place}${p.floor?' · '+p.floor:''}`:'学三食堂 · 湖畔餐厅';$('#saveFromPick').disabled=!p;$('#draw').disabled=!!p;$('#redraw').disabled=!p;}
+$('#draw').onclick=()=>draw(false);$('#redraw').onclick=()=>draw(true);
+$('#saveFromPick').onclick=()=>{if(picked===null)return;$('#date').value=localDate();$('#meal').value=meal;$('#restaurant').value=String(picked);$('#amount').value='';tab('records');$('#amount').focus();toast('已带入选餐结果，填写实际花费即可保存')};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+$('#restaurant').innerHTML=eateries.map((p,i)=>`<option value="${i}">${esc(p.place)} · ${esc(p.floor?p.floor+' · ':'')}${esc(p.name)}</option>`).join('')+'<option value="outside">🏙️ 校外餐厅</option><option value="delivery">🛵 外卖</option><option value="home">🏠 自己做饭</option><option value="other">📍 其他地点</option>';
+const customTypes={outside:'校外餐厅',delivery:'外卖',home:'自己做饭',other:'其他地点'};
+function updateCustomField(){const extra=$('#restaurant').value in customTypes;$('#customLocationField').style.display=extra?'flex':'none';$('#customLocation').placeholder=extra?`例如：${{outside:'校外牛肉面',delivery:'轻食外卖',home:'鸡蛋炒饭',other:'朋友聚餐'}[$('#restaurant').value]}`:'';}
+$('#restaurant').addEventListener('change',updateCustomField);updateCustomField();
+function recordInfo(r){const p=Number.isInteger(r.index)?eateries[r.index]:null;return p?{name:p.name,place:p.place,floor:p.floor}:{name:r.customName||customTypes[r.type]||'其他用餐',place:customTypes[r.type]||'其他地点',floor:''};}
+
+$('#date').value=localDate();$('#monthlyBudget').value=settings.monthlyBudget??'';
+$('#save').onclick=()=>{
+ const date=$('#date').value,choice=$('#restaurant').value,index=Number(choice),amount=Number($('#amount').value),m=$('#meal').value,isCustom=choice in customTypes,customName=$('#customLocation').value.trim();
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||(!isCustom&&(!Number.isInteger(index)||index<0||index>=eateries.length))||!Number.isFinite(amount)||amount<=0||amount>100000){toast('请填写有效的日期、地点和实际花费');return}
+ if(isCustom&&!customName){toast('请填写校外餐厅或食物名称');$('#customLocation').focus();return}
+ const entry={id:typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random(),date,meal:m,amount:Math.round(amount*100)/100};
+ if(isCustom){entry.type=choice;entry.customName=customName;}else{entry.index=index;}
+ records.unshift(entry);records.sort((a,b)=>b.date.localeCompare(a.date));saveData();$('#amount').value='';$('#customLocation').value='';render();toast('已保存用餐记录 ✓');
+};
+$('#monthlyBudget').oninput=()=>{settings.monthlyBudget=$('#monthlyBudget').value;localStorage.setItem(settingKey,JSON.stringify(settings));renderStats()};
+function render(){renderToday();renderRecords();renderStats();showPick()}
+function renderToday(){const todays=records.filter(r=>r.date===localDate());$('#todayChoices').innerHTML=todays.length?todays.map(r=>`<div class="listitem"><span>${esc(r.meal)} · ${esc(recordInfo(r).name)}</span><strong>${money(r.amount)}</strong></div>`).join(''):'今天还没有记录用餐。'}
+function renderRecords(){
+ $('#recordCount').textContent=`共 ${records.length} 笔`;
+ $('#recordList').innerHTML=records.length?records.map(r=>`<div class="listitem"><div><div class="name">${esc(recordInfo(r).name)}</div><div class="muted">${esc(r.date)} · ${esc(r.meal)} · ${esc(recordInfo(r).place)}${recordInfo(r).floor?' '+esc(recordInfo(r).floor):''}</div></div><div class="right"><b>${money(r.amount)}</b><button class="delete" data-id="${esc(r.id)}" aria-label="删除记录">删除</button></div></div>`).join(''):'<p class="small">暂无消费记录。第一次吃完饭后记一笔吧。</p>';
+ $$('#recordList .delete').forEach(b=>b.onclick=()=>{if(confirm('确定删除这条消费记录？')){records=records.filter(r=>r.id!==b.dataset.id);saveData();render();toast('已删除')}})
+}
+function renderStats(){
+ const today=localDate(),month=today.slice(0,7),sum=a=>a.reduce((s,r)=>s+r.amount,0),todayRecords=records.filter(r=>r.date===today),monthRecords=records.filter(r=>r.date.startsWith(month));
+ $('#dayTotal').textContent=money(sum(todayRecords));$('#monthTotal').textContent=money(sum(monthRecords));$('#avgTotal').textContent=money(records.length?sum(records)/records.length:0);
+ const budget=Number($('#monthlyBudget').value);const spent=sum(monthRecords);$('#budgetFill').style.width=budget>0?Math.min(100,spent/budget*100)+'%':'0%';$('#budgetFill').style.background=budget>0&&spent>budget?'#c17861':'#718b72';$('#budgetText').textContent=budget>0?`已花 ${money(spent)} / 预算 ${money(budget)}`:'设置预算后显示进度';$('#budgetPct').textContent=budget>0?(spent/budget*100).toFixed(0)+'%':'';
+ const grouped=eateries.map((p,i)=>({name:(p.place==='湖畔餐厅'?'湖畔·':'')+p.name,count:records.filter(r=>r.index===i).length}));
+ Object.entries(customTypes).forEach(([type,name])=>grouped.push({name,count:records.filter(r=>r.type===type).length}));
+ grouped.sort((a,b)=>b.count-a.count);const max=Math.max(1,...grouped.map(x=>x.count));
+ $('#chart').innerHTML=records.length?grouped.filter(g=>g.count>0).map(g=>`<div class="chartbar"><span class="label" title="${esc(g.name)}">${esc(g.name)}</span><div class="track"><div class="fill" style="width:${g.count/max*100}%"></div></div><span style="min-width:26px;text-align:right">${g.count} 次</span></div>`).join(''):'<p class="small">记录几顿饭后，这里会显示各地点的用餐次数。</p>';
+
+}
+$('#export').onclick=()=>{const lines=[['日期','餐次','食堂','楼层','档口','金额（元）'],...records.map(r=>[r.date,r.meal,recordInfo(r).place,recordInfo(r).floor,recordInfo(r).name,r.amount.toFixed(2)])];const csv='\ufeff'+lines.map(row=>row.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='北师珠用餐记录_'+localDate()+'.csv';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)};
+$('#clear').onclick=()=>{if(confirm('将永久清除本浏览器保存的全部用餐记录。建议先导出 CSV。确定继续？')){records=[];saveData();render();toast('记录已清空')}};
+render();
+</script></body></html>
